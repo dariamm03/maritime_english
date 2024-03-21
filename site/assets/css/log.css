@@ -1,0 +1,399 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+html,
+h1,
+h2,
+h3,
+h5,
+h6 {
+    color: #FFFFFF;
+}
+h4{
+    color: green;
+}
+body{
+    background: black;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*
+    header
+ */
+header{
+    background: #FFFFFF;
+    height: 90px;
+}
+header *{
+    font-family: 'Rubik Bubbles', cursive;
+}
+header h1{
+    margin-top: 12px;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 22px;
+}
+header ul li a:hover{
+    background: #00FF00;
+    transition: 0.5s;
+    color: black;
+    height: 90px;
+}
+
+a:active{
+    background: #00FF00;
+}
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 111;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+.p{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slider-title{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Rubik Bubbles', cursive;
+}
+.carousel{
+    height: 400px;
+}
+.carousel-inner, .carousel-item{
+    height: 300px;
+    border-radius: 4px;
+}
+.main-content{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+.socials .socials p{
+    color: black;
+}
+.footer{
+    background: #FFFFFF;
+    color: black;
+    position: relative;;
+}
+.footer .footer-section{
+    padding: 22px;
+    color: black;
+}
+.footer h5, .footer h3{
+    color:black;
+}
+.preview-text{
+    color: #FFFFFF;
+}
+.font{
+    font-size: 1.3ex;
+}
+.record_form h2{
+    text-align: left;
+    margin: 30px;
+}
+.record_form h5{
+    text-align: left;
+    font-size: 1.5ex;
+}
+.btn-danger{
+    float: right;
+}
+.record_form input{
+    height: 3.3rem;
+}
+
+/*
+FORMS
+ */
+.record-section2 p{
+    color : red;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.fa-user-alt{
+    color: #6495ED;
+    background: #6495ED;
+}
+
+.style-section2{
+    color: #FFFFFF;
+    margin-top:50px;
+}
+.style-section{
+    margin-top:50px;
+}
+
+/*
+FORM REG
+ */
+.reg_form h3{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.reg_form mb-3 col-12 col-md-4{
+    color: #FFFFFF;
+}
+
+.form-label{
+    color: #FFFFFF;
+}
+
+.reg_form a{
+    font-size: 1.2em;
+    transition: all .3s;
+    color: azure;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.reg_form a:hover{
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+.record col-10 col-md-4 d{
+    margin-left: 400px;
+    margin-right: 0;
+}
+form-select mb-2{
+    margin-left: 400px;
+    margin-right: 0;
+}
+
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu-toggle{
+    position: absolute;
+    top: 1em;
+    right: 0.2em;
+    border: 0;
+    background-color: transparent;
+    font-size: 3.1em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 5em;
+}
+
+.menu-toggle::after{
+    position: absolute;
+    top: 0.4em;
+    left: 0.1em;
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+}
+
+.menu-dropdown{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.menu.is-open .menu-dropdown{
+    display: block;
+}
+
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
+
+.nav-menu > li + li{
+    border-top: 1px solid black;
+}
+
+.nav-menu > li > a{
+    display: block;
+    padding: 0.7em 1em;
+    color: black;
+    font-weight: normal;
+}
+
+@media (max-width: 1200px){
+    .main-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer .container-fluid{
+        padding: 20px;
+    }
+
+    .slider-title > h1{
+        font-size: 2.2rem;
+    }
+}
+
+
+@media (max-width: 972px){
+    .menu-toggle{
+        display: none;
+    }
+
+
+    .container record_form{
+        display: flex;
+        margin-left: -.75em;
+        margin-right: -.75em;
+    }
+    .record_form{
+        display: flex;
+        margin-left: -.75em;
+        margin-right: -.75em;
+    }
+
+    .row {
+        display: flex;
+        margin-left: -.75em;
+        margin-right: -.75em;
+    }
+
+    @media (min-width: 560px) {
+
+    }.menu-dropdown{
+         display: block;
+         position: static;
+     }
+
+    .nav-menu{
+        display: flex;
+        border: 0;
+        padding: 0 1em;
+        list-style-type: none;
+    }
+
+    .nav-menu ul{
+        list-style-type: none;
+    }
+
+    .nav-menu > li{
+        flex: 1;
+    }
+
+    .nav-menu > li + li{
+        border: 0;
+    }
+
+    .nav-menu > li > a{
+        padding: 0.3em;
+        text-align: center;
+    }
+}
+
+
+.container h2{
+    margin: 30px 0 ;
+}
+
+.container .post{
+    margin-bottom: 3em;
+}
+
+.container .post_text{
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.container .post_text h3{
+    margin: 14px 0;
+}
+
+.container .post_text h3 a:hover{
+    text-decoration: underline;
+}
+
+.topics{
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #6495ED;
+}
+
+.topics ul li a{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #6495ED;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-size: 1.2em;
+}
+
+.content-news h2{
+    text-align: center;
+}
+
+.content-news .post_text{
+    margin-right: 14px;
+}
+.nav ul{
+    text-align: center;
+}
