@@ -46,11 +46,10 @@ include "../../app/controllers/questions.php";
                     <input name="correct" value="<?=$correct;?>" type="text" class="form-control" placeholder="Правиьный ответ" aria-label="Правиьный ответ">
                 </div>
                 <div class="col">
-                    <label for="description" class="form-label">Код категории вопроса</label>
-                    <option selected>Категория</option>
-                    <select name="type_code" class="form-select mb-2">
+                    <option selected>Код категории</option>
+                    <select name="category_code" class="form-select mb-2">
                         <?php foreach ($categories as $key => $category): ?>
-                            <option value="<?=$category['category_code']; ?>"><?=$category['category_name'];?></option>
+                            <option value="<?=$category['category_id']; ?>"><?=$category['category_name'];?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>

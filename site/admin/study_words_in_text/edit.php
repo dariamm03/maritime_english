@@ -45,9 +45,8 @@ include "../../app/controllers/study_words_in_text.php";
                     <input name="translation" value="<?=$translation;?>" type="text" class="form-control" placeholder="Перевод" aria-label="Перевод">
                 </div>
                 <div class="col">
-                    <label for="description" class="form-label">Код категории слова</label>
-                    <option selected>Категория</option>
-                    <select name="category_code" class="form-select mb-2">
+                    <option selected>Код категории</option>
+                    <select name="category" class="form-select mb-2">
                         <?php foreach ($categories as $key => $category): ?>
                             <option value="<?=$category['category_code']; ?>"><?=$category['category_name'];?></option>
                         <?php endforeach; ?>

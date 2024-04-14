@@ -55,18 +55,28 @@ include "../../app/controllers/questions.php";
                 <div class="text col-2"><?=$question['text'];  ?></div>
                 <div class="correct col-2"><?=$question['correct'];  ?></div>
                 <div class="category_code col-1"><?=$question['category_code']; ?></div>
-                <div class="picture col-2"><?=$question['picture'];  ?></div>
+
+                <?php if (!empty($question['picture'])): ?>
+                    <div class="picture col-2">
+                        <img src="../../assets/img/<?=$question['picture']; ?>" class="d-block" alt="..." width="100" height="100">
+                    </div>
+                <?php endif; ?>
+
+                <?php if (empty($question['picture'])): ?>
+                    <div class="picture col-2"><?=$question['picture']; ?></div>
+                <?php endif; ?>
+
                 <div class="audio col-2"><?=$question['audio']; ?></div>
                 <div class="red col-1"><a href="edit.php?question_code=<?=$question['question_code']; ?>">edit</a></div>
-                <div class="del col-1"><a href="#">delete</a></div>
+                <div class="del col-1"><a href="delete.php?question_del=<?=$question['question_code']; ?>">delete</a></div>
             </div>
         <?php endforeach; ?>
+
+
     </div>
 </div>
 </div>
-
-
-
+%3E1
 <!-- connection footer -->
 <?php include("../../app/include/footer.php"); ?>
 

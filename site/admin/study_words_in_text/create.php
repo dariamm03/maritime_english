@@ -38,7 +38,7 @@ include "../../app/controllers/study_words_in_text.php";
             <div class="mb-12 col-12 col-md-12 err">
                 <p><?=$errMsg?></p>
             </div>
-            <form action="create.php" method="post" enctype="multipart/form-data">
+            <form action="create.php" method="post">
                 <div class="col">
                     <input name="word" value="<?=$word;?>" type="text" class="form-control" placeholder="Слово" aria-label="Слово">
                 </div>
@@ -46,8 +46,7 @@ include "../../app/controllers/study_words_in_text.php";
                     <input name="translation" value="<?=$translation;?>" type="text" class="form-control" placeholder="Перевод" aria-label="Перевод">
                 </div>
                 <div class="col">
-                    <label for="description" class="form-label">Код категории слова</label>
-                    <option selected>Категория</option>
+                    <option selected>Код категории</option>
                     <select name="category" class="form-select mb-2">
                         <?php foreach ($categories as $key => $category): ?>
                             <option value="<?=$category['category_code']; ?>"><?=$category['category_name'];?></option>

@@ -8,20 +8,15 @@ $errMsg = '';
 if( $_SERVER['REQUEST_METHOD'] === 'POST'&& isset($_POST['button-log'])) {
     $login = trim($_POST['login']);
     $password = trim($_POST['password']);
-
     if ($login === '' || $password === ''){
         $errMsg = "Не все поля заполнены!";
     }
     else {
-        $existen1 = selectOne('users', ['login' => $login]);
-        var_dump($password);
-        var_dump( $existen1['password']);
+        $existen1 = selectOne('users', ['login' => $login]);;
         if ($existen1 && password_verify($password, $existen1['password'])) {
 
             $_SESSION['admin'] = $existen1['admin'];
-
             $secret = callSecret($login);
-
             if ($_SESSION['admin']) {
                 header('location: ' . BASE_URL . '2fa.php');
             } else {

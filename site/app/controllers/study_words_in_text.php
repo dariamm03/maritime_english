@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['word_code'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['word-edit'])){
     $word = trim($_POST['word']);
     $translation = trim($_POST['translation']);
-    $category = trim($_POST['category_code']);
+    $category = trim($_POST['category']);
     $example_in_text = trim($_POST['example_in_text']);
 
 

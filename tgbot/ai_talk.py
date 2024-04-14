@@ -51,7 +51,7 @@ INTENTS = {
             "responses": ["We are at coordinates 45.6789° N, 23.4567° W", "Currently in the Pacific Ocean area"],
         },
         "sailors_code": {
-            "examples": ["Do you know the rules of maritime journeys?", "What is the sailor's code?"],
+            "examples": ["Do you know the rules of maritime journeys?", "What is the sailor's code?", "What's the rules?"],
             "responses": ["The sailor's code is a set of rules and obligations followed at sea to ensure safety and order"],
         },
         "sea_legs": {

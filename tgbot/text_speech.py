@@ -45,7 +45,7 @@ def verify_word(message, word, user_response, points):
         bot.send_message(message.chat.id, "*✅ Молодец! Вы правильно произнесли слово*", parse_mode='Markdown')
         points += 1
     else:
-        bot.send_message(message.chat.id, f"*❌ Неправильно. Твоё слово: {user_response.lower()} Правильное слово было:* {remove_punctuation(word.lower())}", parse_mode='Markdown')
+        bot.send_message(message.chat.id, f"*❌ Неправильно. Твоё слово: {user_response.lower()} Правильное слово было:* {word.lower()}", parse_mode='Markdown')
     return  points
 
 def get_user_response():

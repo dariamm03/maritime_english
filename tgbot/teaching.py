@@ -70,7 +70,6 @@ def get_words_by_category(category):
         translation = res['translation']
         translations.append(translation)
         word_translation_pairs.append([word, translation])
-
         chunk_size = 10  # Максимальное количество слов в каждой таблице
         pair_groups = [word_translation_pairs[i:i + chunk_size] for i in range(0, len(word_translation_pairs), chunk_size)]
     return pair_groups

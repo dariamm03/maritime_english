@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W292" />
+          <option value="E402" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="lab7.userApp.database.userApp" />
+          <option value="lab7.userApp.interfaces.indexController.*" />
+          <option value="lab7.userApp.helper.jinjaHelper.userApp" />
+          <option value="userApp" />
+          <option value="lab7.csv_to_db.Flights" />
+          <option value="config.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

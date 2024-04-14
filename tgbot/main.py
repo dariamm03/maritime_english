@@ -128,7 +128,7 @@ def quiz_handler(message):
 def new_round(chat_id, message):
     global count
     count += 1
-    if (count < 9):
+    if (count < 8):
         if chat_id in states:
             state = states[chat_id]
             state.current_item = quiz.get_next_question()
@@ -264,7 +264,7 @@ def handle_user_response(message, word, pair_groups, index):
     elif message.voice:
         user_response = speech(message)
         print(user_response)
-        verify_word(message, word, user_response)
+        verify_word(message, word, user_response, points)
 
         if index < len(pair_groups):
             word, translation = pair_groups[index]
